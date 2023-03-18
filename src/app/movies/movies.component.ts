@@ -16,4 +16,13 @@ export class MoviesComponent {
       this.movies = movies;
     });
   }
+
+  filterMovies(decade: number) {
+    this.movies = this.movies.filter((movie) => {
+      const movieYears = movie.Year.split('-');
+      return movieYears
+        .map((year) => Number(year))
+        .every((year) => year >= decade && year < decade + 10);
+    });
+  }
 }
