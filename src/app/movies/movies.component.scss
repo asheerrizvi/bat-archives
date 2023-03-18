@@ -1,5 +1,5 @@
 .filter-wrapper {
-  margin-bottom: var(--size-8);
+  margin-bottom: var(--size-4);
 }
 
 .filter-buttons {
@@ -7,6 +7,10 @@
   margin-left: auto;
   padding: var(--size-1);
   width: max-content;
+
+  &:hover {
+    box-shadow: 4px 4px 0px 0px var(--yellow-5);
+  }
 }
 
 .filter-wrapper button {
