@@ -1,0 +1,20 @@
+.filter-wrapper {
+  margin-bottom: var(--size-8);
+}
+
+.filter-buttons {
+  border: var(--border-size-2) solid var(--gray-10);
+  margin-left: auto;
+  padding: var(--size-1);
+  width: max-content;
+}
+
+.filter-wrapper button {
+  border: none;
+}
+
+.movies-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-4);
+}

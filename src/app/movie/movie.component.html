@@ -1,0 +1,26 @@
+<article class="movie-wrapper">
+  <img
+    class="movie-poster"
+    [src]="movie.Poster"
+    alt="{{ movie.Title }} poster"
+  />
+  <div class="movie-info-wrapper">
+    <div class="movie-info">
+      <h2 class="movie-title">{{ movie.Title }}</h2>
+      <div class="movie-secondary-info">
+        <p class="movie-rated">{{ movie.Rated }}</p>
+        <p>{{ movie.Runtime }}</p>
+        <p class="movie-released">{{ movie.Released }}</p>
+      </div>
+      <p>{{ movie.Plot }}</p>
+      <p>{{ movie.Year }}</p>
+    </div>
+    <a
+      class="view-on-imdb-link"
+      href="https://www.imdb.com/title/{{ movie.imdbID }}"
+      rel="noopener noreferrer"
+      target="_blank"
+      >View on IMDB</a
+    >
+  </div>
+</article>

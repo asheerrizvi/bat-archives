@@ -1,0 +1,12 @@
+<div class="filter-wrapper">
+  <div class="filter-buttons">
+    <button>2000's</button>
+    <button>1990's</button>
+  </div>
+</div>
+
+<div class="movies-wrapper">
+  <ng-container *ngFor="let movie of movies">
+    <app-movie [movie]="movie"></app-movie>
+  </ng-container>
+</div>
