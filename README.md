@@ -1,27 +1,13 @@
 # BatArchives
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+Check out the deployed app at: https://bat-archives.netlify.app/
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Considerations
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+* Since responsiveness was not an explicit requirement I haven't made the UI responsive. Please let me know if that is a requirement and I can make the changes.
+* I have taken some creative freedom for styling. Layout is very similar to the mockup but the styles aren't. I can do something very similar to the mockup as well.
+* The change decade filters should ideally be a dropdown or a select component. But I have used a row of buttons here for simplicity.
