@@ -90,7 +90,7 @@ button {
   border: var(--border-size-2) solid var(--gray-10);
   background-color: transparent;
 
-  &:is(:hover, :focus) {
+  &:is(:hover, :focus, .active) {
     cursor: pointer;
     color: var(--gray-0);
     background-color: var(--gray-10);

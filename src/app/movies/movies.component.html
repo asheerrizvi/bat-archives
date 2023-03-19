@@ -1,14 +1,40 @@
 <div class="filter-wrapper">
   <div class="filter-buttons">
-    <button (click)="filterMovies(2020)">2020's</button>
-    <button (click)="filterMovies(2010)">2010's</button>
-    <button (click)="filterMovies(2000)">2000's</button>
-    <button (click)="filterMovies(1990)">1990's</button>
+    <button
+      [ngClass]="{ active: filteredDecade === 2020 }"
+      (click)="filterMovies(2020)"
+    >
+      2020's
+    </button>
+    <button
+      [ngClass]="{ active: filteredDecade === 2010 }"
+      (click)="filterMovies(2010)"
+    >
+      2010's
+    </button>
+    <button
+      [ngClass]="{ active: filteredDecade === 2000 }"
+      (click)="filterMovies(2000)"
+    >
+      2000's
+    </button>
+    <button
+      [ngClass]="{ active: filteredDecade === 1990 }"
+      (click)="filterMovies(1990)"
+    >
+      1990's
+    </button>
+    <button
+      [ngClass]="{ active: filteredDecade === undefined }"
+      (click)="filterMovies()"
+    >
+      All
+    </button>
   </div>
 </div>
 
 <div class="movies-wrapper">
-  <ng-container *ngFor="let movie of movies">
+  <ng-container *ngFor="let movie of filteredMovies">
     <app-movie [movie]="movie"></app-movie>
   </ng-container>
 </div>
